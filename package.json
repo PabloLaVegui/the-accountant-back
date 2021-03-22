@@ -2,10 +2,10 @@
   "name": "the-accountant-back",
   "version": "1.0.0",
   "description": "The accountant api",
-  "main": "app.js",
+  "main": "./src/app.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./src/app.js",
     "dev": "nodemon",
     "lint": "eslint ./",
     "lint-fix": "eslint ./ --fix",

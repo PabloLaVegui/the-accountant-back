@@ -1,9 +1,9 @@
 import dotenv from 'dotenv'
 import express from 'express'
-import expensesRouter from './src/routes/expenses.js'
+import expensesRouter from './routes/expenses.js'
 
-import HttpException from './src/application/exception/HttpException.js'
-import errorMiddleware from './src/middleware/error.middleware.js'
+import HttpException from './application/exception/HttpException.js'
+import errorMiddleware from './middleware/error.middleware.js'
 
 dotenv.config()
 
