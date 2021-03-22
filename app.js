@@ -1,6 +1,10 @@
+const dotenv = require('dotenv')
+dotenv.config()
+
 const express = require('express')
 const app = express()
-const port = 3000
+const port = Number(process.env.PORT)
+console.log('port...', port)
 
 const expensesRouter = require('./src/routes/expenses')
 
