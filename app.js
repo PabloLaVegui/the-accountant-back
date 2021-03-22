@@ -15,8 +15,8 @@ app.use(express.json())
 app.use('/expenses', expensesRouter)
 
 app.all('*', (req, res, next) => {
-    const err = new HttpException(404, 'Not Found')
-    next(err);
+  const err = new HttpException(404, 'Not Found')
+  next(err)
 })
 app.use(errorMiddleware)
 
