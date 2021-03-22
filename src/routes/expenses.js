@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
+import express from 'express'
 
-router.get('/', function(req, res, next) {
+const expensesRouter = express.Router();
+
+expensesRouter.get('/', function(req, res, next) {
   res.send('hi!');
 });
 
-module.exports = router;
+export default expensesRouter;
