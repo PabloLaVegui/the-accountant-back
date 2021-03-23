@@ -13,3 +13,17 @@ npm run dev
 ```
 docker-compose up -d
 ```
+
+### Migrations
+
+Generate migration:
+
+```
+npx sequelize-cli migration:generate --name migration_name
+```
+
+Run migrations:
+
+```
+npx sequelize-cli db:migrate
+```
