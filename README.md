@@ -1,4 +1,4 @@
-# The Accountant 
+# The Accountant
 
 ## Development
 
@@ -26,4 +26,10 @@ Run migrations:
 
 ```
 npx sequelize-cli db:migrate
+```
+
+Down migrations:
+
+```
+npx sequelize-cli db:migrate:undo
 ```
