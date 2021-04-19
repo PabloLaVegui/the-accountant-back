@@ -2,7 +2,7 @@
   "name": "the-accountant-back",
   "version": "1.0.0",
   "description": "The accountant api",
-  "main": "./src/app.js",
+  "main": "./src/api/app/app.js",
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js",
