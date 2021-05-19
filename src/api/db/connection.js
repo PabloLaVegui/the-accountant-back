@@ -3,6 +3,9 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
+console.log('mode...', process.env.NODE_ENV)
+console.log('db_name...', process.env.DB_NAME)
+
 const connection = async () => {
   return await mysql.createConnection({
     user: process.env.DB_USERNAME,

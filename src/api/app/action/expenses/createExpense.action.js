@@ -13,7 +13,7 @@ const create = async (req, res, next) => {
     amount: req.body.amount,
   })
     .then((id) => {
-      res.status(201).json({ id })
+      res.status(201).json({ id }) // TODO: devolver el objeto completo
     })
     .catch((error) => {
       res.status(500).json({ error: error.toString() })
